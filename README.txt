@@ -7,3 +7,7 @@ asi no hay excusa para no poder moverle a la página mientras
 se está en otro lado (con excepciones)
 
 Gracias c:
+
+
+Xinga tu madre Rodriiiiiiii
+-Adrian
