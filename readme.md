@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Evidence https://kikooooo22.github.io/Proyecto-rosy-4to-sem/</title>
     <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="tutifruti.css" rel="stylesheet">
