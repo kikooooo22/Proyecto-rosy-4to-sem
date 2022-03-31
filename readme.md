@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Evidence https://kikooooo22.github.io/Proyecto-rosy-4to-sem </title>
+    <title>Evidence</title>
     <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="tutifruti.css" rel="stylesheet">
     <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
@@ -12,6 +12,8 @@
     <div class="container-fluid p-2" style="background-color: #9C27B0">
         <h2 style="color: white">EVIDENCE</h2>
     </div>
+    <br>
+    <h1>https://kikooooo22.github.io/Proyecto-rosy-4to-sem/</h1>
     <br>
     <div class="borde container" align="center" style="background-color: white">
         <h3>Iniciar Sesión</h3>
