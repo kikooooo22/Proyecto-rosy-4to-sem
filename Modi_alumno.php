@@ -1,4 +1,5 @@
-<?php 	
+<?php
+    include 'header.php';
 	require('conexion.php');
     $id=$_GET['id'];
 	$No_lista=$_GET['No_lista'];
@@ -15,62 +16,25 @@
 <html>
 
     <body>
-    
-        <style>
-        
-            html{
-                background-color: dimgrey;
-                color: aliceblue;
-            }
-            
-            div{
-                align-content: center;
-                text-align: center;
-                margin-top: 2%;
-            }
-            
-            h1{
-                font-size: 2.3vw;
-            }
-            
-            .boton{
-                align-content: center;
-                height: 5%;
-                width: 12%;
-                font-size: 1.4vw;
-                background-color: #cccccc;
-                border: none;
-                border-radius: 20px;
-            }
-            
-            .boton:hover{
-                background-color: #9c9c9c;
-            }
-            
-            .boton:active{
-                transform: scale(0.98);
-            }
-        
-        </style>
-        
-        <div>
+        <br><br>
+        <div align="center">
         
             <?php if($resultado>0){?>
 
-            <div aling="center" >
-                <h1>Modificado con éxito | <?php echo $No_lista ?> | <?php echo $id ?></h1>
+            <div aling="center">
+                <h1 class="h1 text-success">Modificado con éxito</h1>
             </div>
 
             <?php } else {?>
 
             <div aling="center">
-                <h1>No se ha podido modificar el registro</h1>
+                <h1 class="h1 text-danger">No se ha podido modificar el registro</h1>
             </div>
 
             <?php } ?>
 
             <a href="alumnos.php">
-                <input type="submit" value="Regresar" class="boton">
+                <input type="submit" value="Regresar" class="btn btn-primary">
             </a>
         
         </div>
