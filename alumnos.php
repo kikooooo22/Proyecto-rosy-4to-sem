@@ -97,7 +97,7 @@ $resultado= mysqli_query($mysqli,$query) or die(mysqli_error($mysqli));
                 <input type="text" name="Nombre" class="texto" placeholder="Nombre">
                 <input type="text" name="Apellido_pat" class="texto" placeholder="Paterno">
                 <input type="text" name="Apellido_mat" class="texto" placeholder="Materno">
-                <input type="submit" value="Presioname we" class="boton">
+                <input type="submit" value="Dar de alta" class="boton">
 
             </form>
         </div>
