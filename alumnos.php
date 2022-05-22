@@ -121,12 +121,12 @@ if($_GET){
                 <table class="table align-middle table-bordered">
                     <thead>
                     <tr class="table-dark">
-                        <td align="center" class="titulotabla"><b>N° de Lista</b></td>
+                        <td align="center" class="titulotabla" width="8%"><b>N° de Lista</b></td>
                         <td align="center" class="titulotabla"><b>Nombre</b></td>
                         <td align="center" class="titulotabla"><b>Apellido paterno</b></td>
                         <td align="center" class="titulotabla"><b>Apellido materno</b></td>
-                        <td align="center" class="titulotabla"><b>Modificar</b></td>
-                        <td align="center" class="titulotabla"><b>Eliminar</b></td>
+                        <td align="center" class="titulotabla" width="13%"><b>Modificar</b></td>
+                        <td align="center" class="titulotabla" width="13%"><b>Eliminar</b></td>
                     </tr>
                     </thead>
 
@@ -145,7 +145,7 @@ if($_GET){
                                 </a>
                             </td>
                             <td>
-                                <a href="Eliminar_alumno.php?No_lista=<?php echo $row['No_lista'] ?>">
+                                <a href="confirmacionAlumno.php?No_lista=<?php echo $row['No_lista'] ?>">
                                     <input type="submit" value="Eliminar" class="btn btn-danger">
                                 </a>
                             </td>

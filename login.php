@@ -91,7 +91,7 @@
                             $correo=$_GET["mail"];
                             $password=$_GET["pass"];
                             if($correo==$placemail and $password==$placepass){
-                                header("location: ingresar.html");
+                                header("location: inicio.html");
                                 exit;
                             }else{
                                 echo("<br><h4 class='text-warning'>ERROR: Correo o Contraseña Incorrectos.</h4>");
