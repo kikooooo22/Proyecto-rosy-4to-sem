@@ -27,7 +27,6 @@
                           </div>
                           
                           <div class="col-11" style="padding-right: 9%">
-                              <h3 class="text-center">Datos de alumnos</h3>
                           </div>
                           
                       </div>
