@@ -36,18 +36,26 @@
                     <td>No. Lista</td>
                     <td>Calificacion</td>
                     <td>Subir</td>
+                    <td>Guardar</td>
+                    <td>Ver</td>
                 </tr>
                 </thead>
                 <tbody>
                 <?php while($reg=mysqli_fetch_array($res2)){?>
-                    <tr>
+                    <tr class="align-middle" align="center">
                         <td><?php echo($reg['Trabajo_idTrabajo']) ?></td>
                         <td><?php echo($reg['alumno_No_lista'])?></td>
                         <td><?php echo($reg['Calf_trabajo'])?></td>
+                        <form action="subirArchivo.php" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="No_lista" value="<?php echo $reg['alumno_No_lista']?>">
+                            <td><input type="file" name="imagen" value="" class="btn" style="overflow: hidden"></td>
+                            <td><input type="submit" name="submit" value="Guardar archivo" class="btn btn-primary"></td>
+                        </form>
                         <td>
-                            <a>
-                                <input type="submit" class="btn btn-primary" value="subir">
-                            </a>
+                            <form action="verEvidencia.php" method="post">
+                                <input type="hidden" name="No_lista" value="<?php echo $reg['alumno_No_lista']?>">
+                                <input type="submit" name="submit" value="Ver evidencia"  class="btn btn-primary">
+                            </form>
                         </td>
                     </tr>
                 <?php } ?>
