@@ -2,7 +2,8 @@
 // Include the database configuration file  
 require_once 'conexion.php'; 
  
-$No_lista = $_POST['No_lista']; 
+$No_lista = $_POST['No_lista'];
+$calificacion = $_POST['calif'];
 
 // If file upload form is submitted 
 $status = $statusMsg = ''; 
@@ -20,7 +21,7 @@ if(isset($_POST["submit"])){
             $imgContent = addslashes(file_get_contents($image)); 
          
             // Insert image content into database 
-            $insert = $mysqli->query("UPDATE evidencia SET Evidencia='$imgContent' WHERE alumno_No_lista=$No_lista"); 
+            $insert = $mysqli->query("UPDATE evidencia SET Evidencia='$imgContent', Calf_trabajo=$calificacion WHERE alumno_No_lista=$No_lista");
              
             if($insert){ 
                 $status = 'success'; 
