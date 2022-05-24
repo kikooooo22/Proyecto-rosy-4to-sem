@@ -5,6 +5,8 @@
             include 'header.php';
             require('conexion.php');
             $No_lista=$_GET['No_lista'];
+            $q2="DELETE FROM evidencia WHERE Trabajo_idTrabajo=$id";
+            $res2=mysqli_query($conexion, $q2);
             $query="DELETE FROM alumno WHERE No_lista='$No_lista'";
             $resultado=$mysqli->query($query);
         ?>
