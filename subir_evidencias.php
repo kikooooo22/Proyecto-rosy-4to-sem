@@ -45,8 +45,8 @@
                     <tr class="align-middle" align="center">
                         <td><?php echo($reg['Trabajo_idTrabajo']) ?></td>
                         <td><?php echo($reg['alumno_No_lista'])?></td>
-                        <td><?php echo($reg['Calf_trabajo'])?></td>
                         <form action="subirArchivo.php" method="post" enctype="multipart/form-data">
+                            <td><input type="text" name="calif"></td>
                             <input type="hidden" name="No_lista" value="<?php echo $reg['alumno_No_lista']?>">
                             <td><input type="file" name="imagen" value="" class="btn" style="overflow: hidden"></td>
                             <td><input type="submit" name="submit" value="Guardar archivo" class="btn btn-primary"></td>
