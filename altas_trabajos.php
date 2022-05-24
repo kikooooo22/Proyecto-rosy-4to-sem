@@ -15,6 +15,12 @@
             if(!$datos){
                 $query="INSERT INTO trabajo (idTrabajo, materia_ID_materia, nom_Trabajo, Ponderacion, Fecha) VALUES ($cont,$materia,'$nombre',$valor, '$fecha')";
                 $res= mysqli_query($conexion,$query);
+                $q="SELECT * FROM alumno";
+                $obt=mysqli_query($conexion, $q);
+                while ($alumnos=mysqli_fetch_array($obt)){
+                    $query2="INSERT INTO evidencia (Trabajo_idTrabajo, alumno_No_lista) VALUES ($cont, ".$alumnos['No_lista'].")";
+                    $eser= mysqli_query($conexion, $query2);
+                }
                 return;
             }else{
                 $cont++;
@@ -34,6 +40,7 @@
             </div>
         </div>
         ");
+
     }else{
         echo("
         <div class='justify-content-center'>
